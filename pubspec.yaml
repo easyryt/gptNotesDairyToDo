@@ -41,6 +41,9 @@ dependencies:
   lottie: ^2.7.0
   shared_preferences: ^2.2.2
   neumorphic_ui: ^1.0.1
+  appflowy_editor: ^2.1.0
+  sqflite: ^2.3.0
+  path: ^1.8.3
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +70,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/icons/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

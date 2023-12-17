@@ -1,3 +1,4 @@
+import 'package:easyryt_ai_notes_ask_ai/controllers/todo-controller.dart';
 import 'package:easyryt_ai_notes_ask_ai/screens/intro/splash-screen.dart';
 import 'package:easyryt_ai_notes_ask_ai/services/global.dart';
 import 'package:flutter/material.dart';
@@ -6,11 +7,13 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 
 void main() async {
   await Global.init();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+
+  TodoController todoController = Get.put(TodoController());
 
   @override
   Widget build(BuildContext context) {
